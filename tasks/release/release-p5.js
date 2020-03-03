@@ -74,22 +74,22 @@ module.exports = function(grunt) {
       grunt.config.set('githubReleaser', 'processing');
 
       // 1. Test Suite
-      grunt.task.run('test');
+      // grunt.task.run('test');
 
       // 2. Version Bump, Build Library, Docs, Create Commit and Tag, Push to p5.js repo, release on NPM.
       grunt.task.run('release-it');
 
       // 3. Push the new lib files to the dist repo (to be referred as bower-repo here)
-      grunt.task.run('release-bower');
+      // grunt.task.run('release-bower');
 
       // 4. Push the docs out to the website
-      grunt.task.run('release-docs');
+      // grunt.task.run('release-docs');
 
       // 5. Zip the lib folder
       grunt.task.run('compress');
 
       // 6. Draft a Release for GitHub
-      grunt.task.run('release-github');
+      // grunt.task.run('release-github');
     }
   );
 };
